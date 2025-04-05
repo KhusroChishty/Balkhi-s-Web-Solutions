@@ -2,91 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Balkhi's Web Solutions</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-    }
-    header {
-      background: #0a192f;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    header img {
-      width: 100px;
-    }
-    nav {
-      text-align: center;
-      padding: 1rem;
-      background: #112240;
-    }
-    nav a {
-      color: #64ffda;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      margin-bottom: 1rem;
-      border-radius: 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #0a192f;
-      color: white;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-
-  <header>
-    <img src="https://cdn-icons-png.flaticon.com/512/2721/2721296.png" alt="Tech Logo" />
-    <h1>Balkhi's Web Solutions</h1>
-    <p>Your digital partner for modern, custom web apps</p>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow p-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">Balkhi's Web Solutions</h1>
+      <nav>
+        <a href="#services" class="mx-2 text-gray-700 hover:text-indigo-600">Services</a>
+        <a href="#about" class="mx-2 text-gray-700 hover:text-indigo-600">About</a>
+        <a href="#contact" class="mx-2 text-gray-700 hover:text-indigo-600">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#founder">Founder</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="services">
-    <h2>Services We Offer</h2>
-    <ul>
-      <li>⚙️ Custom Website Development</li>
-      <li>📱 Web Applications for Businesses</li>
-      <li>🛍️ E-commerce Solutions for Local Stores</li>
-      <li>🧾 Management Portals for Law Firms</li>
-      <li>📊 Analytics Dashboards & CRM Tools</li>
-    </ul>
+  <!-- Hero Section -->
+  <section class="bg-indigo-100 py-20 text-center">
+    <h2 class="text-4xl font-bold text-indigo-700">Empowering Small Businesses with Web Solutions</h2>
+    <p class="mt-4 text-lg">We build websites and web apps tailored for stores, law firms, and any custom needs.</p>
   </section>
 
-  <section id="founder">
-    <h2>Founder</h2>
-    <p><strong>Sameer Balkhi</strong> – A passionate developer & digital solutions architect with a vision to empower small businesses through technology. With a hands-on approach and commitment to custom-built platforms, Sameer focuses on delivering practical, efficient, and beautiful tech solutions.</p>
+  <!-- Services -->
+  <section id="services" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-10 text-indigo-600">Our Services</h3>
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="bg-indigo-50 p-6 rounded-xl shadow">
+          <h4 class="text-xl font-semibold mb-2">Custom Websites</h4>
+          <p>Responsive, fast, and branded websites to put your business online in style.</p>
+        </div>
+        <div class="bg-indigo-50 p-6 rounded-xl shadow">
+          <h4 class="text-xl font-semibold mb-2">Web Applications</h4>
+          <p>Custom tools like billing systems, online forms, booking tools and more.</p>
+        </div>
+        <div class="bg-indigo-50 p-6 rounded-xl shadow">
+          <h4 class="text-xl font-semibold mb-2">Ongoing Support</h4>
+          <p>Maintenance, updates, security, and improvements — all handled for you.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>📧 Email: <a href="mailto:hello@balkhiswebsolutions.com">hello@balkhiswebsolutions.com</a></p>
-    <p>🌐 GitHub: <a href="https://github.com/YOUR_USERNAME" target="_blank">github.com/YOUR_USERNAME</a></p>
-    <p>📍 Location: Remote (Serving globally)</p>
+  <!-- About Founder -->
+  <section id="about" class="py-16 bg-gray-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-indigo-600 mb-6">About the Founder</h3>
+      <p class="text-lg">👨‍💻 <strong>Sameer Balkhi</strong> — A passionate web developer dedicated to helping small businesses grow through technology. Whether you run a local shop, law firm, or small agency, I’ll build the tools you need.</p>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Balkhi's Web Solutions. All rights reserved.</p>
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold text-indigo-600 mb-6">Contact Us</h3>
+      <p class="mb-4">📧 Email: <a href="mailto:balkhiswebsolutions@gmail.com" class="text-indigo-700 underline">balkhiswebsolutions@gmail.com</a></p>
+      <p>📍 Based in: [Your City]</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-600 text-white text-center py-4">
+    &copy; 2025 Balkhi's Web Solutions. All rights reserved.
   </footer>
-
 </body>
 </html>
